@@ -1,12 +1,11 @@
-SQL fle for veterinary system
-CREATE DATABASE veterinary
+CREATE DATABASE veterinary;
 CREATE TABLE owners(
     ownerid INT PRIMARY KEY,
     ofirstname VARCHAR(50),
     olastname VARCHAR(50),
     address VARCHAR(100),
     phone VARCHAR(15),
-    email VARCHAR(100),
+    email VARCHAR(100)
 );
 CREATE TABLE animals(
     animalid INT PRIMARY KEY,
@@ -17,15 +16,14 @@ CREATE TABLE animals(
     gender VARCHAR(10),
     color VARCHAR(50),
     ownerid INT,
-    FOREIN KEY (ownerid)
-    REFERENCES owners(ownerid)
+    FOREIGN KEY (ownerid) REFERENCES owners(ownerid)
 );
 CREATE TABLE appointments(
     appointid INT PRIMARY KEY,
     animalid INT,
     appointdate DATE,
     reason VARCHAR(255),
-    FOREIN KEY (animalid) REFERENCES animals(animalid)
+    FOREIGN KEY (animalid) REFERENCES animals(animalid)
 );
 CREATE TABLE doctors(
     doctorid INT PRIMARY KEY,
@@ -129,7 +127,6 @@ VALUES
 
 ALTER TABLE owners
 ADD COLUMN registereddate DATE;
-
 ALTER TABLE invoices
 RENAME COLUMN paymentdate TO paymenttime;
 
@@ -142,7 +139,6 @@ WHERE firstname = 'Sofia';
 
 ALTER TABLE owners
 ADD COLUMN email;
-VARCHAR(255);
 
 SELECT DISTINCT species
 FROM animals;
