@@ -139,3 +139,6 @@ WHERE animalid = (SELECT animalid FROM animals WHERE animalname = 'Simba');
 UPDATE doctors
 SET lastname = 'Reyes-Gonzales'
 WHERE firstname = 'Sofia';
+
+ALTER TABLE owners
+DROP COLUMN email;
