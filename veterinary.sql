@@ -143,3 +143,6 @@ WHERE firstname = 'Sofia';
 ALTER TABLE owners
 ADD COLUMN email;
 VARCHAR(255);
+
+SELECT DISTINCT species
+FROM animals;
