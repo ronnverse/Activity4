@@ -141,4 +141,5 @@ SET lastname = 'Reyes-Gonzales'
 WHERE firstname = 'Sofia';
 
 ALTER TABLE owners
-DROP COLUMN email;
+ADD COLUMN email;
+VARCHAR(255);
