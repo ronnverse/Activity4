@@ -20,3 +20,10 @@ CREATE TABLE animals(
     FOREIN KEY (ownerid)
     REFERENCES owners(ownerid)
 );
+CREATE TABLE appointments(
+    appointid INT PRIMARY KEY,
+    animalid INT,
+    appointdate DATE,
+    reason VARCHAR(255),
+    FOREIN KEY (animalid) REFERENCES animals(animalid)
+);
