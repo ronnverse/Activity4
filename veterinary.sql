@@ -64,3 +64,15 @@ VALUES
 (8, 'Isabella', 'Ramos', '34 EDSA, Mandaluyong', '09561234567', 'isabella.ramos@example.com'),
 (9, 'James', 'Del Rosario', '90 Taft Ave, Manila', '09184562371', 'james.delrosario@example.com'),
 (10, 'Patricia', 'Mendoza', '21 Lapu-Lapu St, Cebu City', '09273458901', 'patricia.mendoza@example.com');
+INSERT INTO animals (animalid, name, species, breed, birthdate, gender, color, ownerid)
+VALUES
+(1, 'Buddy', 'Dog', 'Labrador Retriever', '2020-05-12', 'Male', 'Brown', 1),
+(2, 'Mittens', 'Cat', 'Persian', '2021-03-08', 'Female', 'White', 2),
+(3, 'Rocky', 'Dog', 'Bulldog', '2019-11-25', 'Male', 'Brindle', 3),
+(4, 'Chloe', 'Cat', 'Siamese', '2022-07-02', 'Female', 'Cream', 4),
+(5, 'Max', 'Dog', 'German Shepherd', '2020-09-15', 'Male', 'Black and Tan', 5),
+(6, 'Coco', 'Bird', 'Parrot', '2021-12-10', 'Female', 'Green', 6),
+(7, 'Shadow', 'Dog', 'Siberian Husky', '2018-04-20', 'Male', 'Gray and White', 7),
+(8, 'Luna', 'Cat', 'Maine Coon', '2022-01-05', 'Female', 'Gray', 8),
+(9, 'Charlie', 'Dog', 'Beagle', '2021-06-18', 'Male', 'Tri-color', 9),
+(10, 'Bella', 'Rabbit', 'Holland Lop', '2023-02-11', 'Female', 'White and Brown', 10);
